@@ -37,6 +37,9 @@ More info at this [link](https://www.vagrantup.com/intro/index.html).
 ### Vagrant - Overview
 in the _vagrant_ folder there is a file called ```Vagrantfile```. Inside, the configuration of the virtual machine (VM) that can be used to perform the exercises is described. In addition, there is a _bash_ file called ```provisioner.sh``` that is automatically executed during the creation of the VM and which has the purpose of installing the necessary software packages and making some configurations inside the newly created VM.
 
+> :warning: WARNING: please change the values of ```user.name``` and ```user.email``` in ```provisioner.sh``` file and un-comment that lines!!!
+
+
 ### Vagrant - Usage
 To use vagrant you need to open a terminal in the ```vagrant``` folder and type one of the commands below, the one that's right fo you :-)
 
