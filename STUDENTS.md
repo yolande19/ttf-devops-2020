@@ -3,6 +3,7 @@
 | Full Name 1 | GitHub nickname 1 | Full Name 2 | GithHub nickname 2 | notes |
 | ----------- | ----------------- | ----------- | ------------------ | ----- |
 | Gianni Bombelli | bombo82 | | | teacher |
+| Giacomo Satta | giacomosatta | Lorenzo Filippi | lofilips | |
 | Matteo Pirovano | mttpisi | Marco Leuzzi | Leuz99 | student |
 | Ezio Raciti | ezioraciti | Paolo Chierici | paolinux97 | |
 | Jacopo Galetti | jagama | Andrea Castoldi | c4sto |  |
