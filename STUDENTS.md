@@ -3,6 +3,7 @@
 | Full Name 1 | GitHub nickname 1 | Full Name 2 | GithHub nickname 2 | notes |
 | ----------- | ----------------- | ----------- | ------------------ | ----- |
 | Gianni Bombelli | bombo82 | | | teacher |
+| Luca Pedrotti | Stalling994 | | | Student |
 | Djimeli Yolande | Yolande19 | | | |
 | Gabriele Cinquepalmi | gabrix96 | | | |
 | Daniele Pruneri | danpru | Alessio Romele | AleRommels9913 | |
