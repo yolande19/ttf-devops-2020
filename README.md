@@ -26,8 +26,22 @@ After that, the students will use this repository, their own fork, as a single r
 - Vagrant (optional)
 
 ## Working Agreements
-- lavoro in coppia
+- libertà di lavorare da soli o in coppia (preferibilmente in coppia)
+- le coppie sono durature e invariabili nel tempo
+- verrà valutato il contenuto della branch master
+- verrà valutato l'uso delle branch e dei commit
+- la branch master contiene solo codice funzionante
+- ogni esercizio deve essere in una cartella separata
 
+- la branch master _può / NON può_ contenere il "work in progress"
+- commit piccoli che permettano di ricostruire la storia
+- uso della branch develop per il "work in progress"
+- uso di una branch per ogni esercizio (merge su master alla fine dello stesso)
+- uso libero delle branch
+- nomi delle cartelle e delle branch parlanti
+- messaggi di commit concisi, chiari ed esatti
+
+> Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it and, above all, accurately so they will be guided by its light. Joseph Pulitzer
 
 ## Vagrant
 HashiCorp Vagrant provides the same, easy workflow regardless of your role as a developer, operator, or designer. It leverages a declarative configuration file which describes all your software requirements, packages, operating system configuration, users, and more.
