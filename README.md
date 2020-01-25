@@ -26,22 +26,32 @@ After that, the students will use this repository, their own fork, as a single r
 - Vagrant (optional)
 
 ## Working Agreements
+
 - libertà di lavorare da soli o in coppia (preferibilmente in coppia)
 - le coppie sono durature e invariabili nel tempo
-- verrà valutato il contenuto della branch master
-- verrà valutato l'uso delle branch e dei commit
 - la branch master contiene solo codice funzionante
 - ogni esercizio deve essere in una cartella separata
-
-- la branch master _può / NON può_ contenere il "work in progress"
+- la branch master _può_ contenere il "work in progress"
 - commit piccoli che permettano di ricostruire la storia
-- uso della branch develop per il "work in progress"
-- uso di una branch per ogni esercizio (merge su master alla fine dello stesso)
-- uso libero delle branch
-- nomi delle cartelle e delle branch parlanti
+- uso libero delle branch per il "work in progress"
 - messaggi di commit concisi, chiari ed esatti
 
 > Put it before them briefly so they will read it, clearly so they will appreciate it, picturesquely so they will remember it and, above all, accurately so they will be guided by its light. Joseph Pulitzer
+
+## Esercizi e Valutazione
+
+Nella directory ```esercizi``` sono presenti i file necessari allo svolgimento degli stessi e per la precisione:
+- _README.md_ file contenente il testo dell'esercizio
+- _acceptance_test.sh_ file contenente i test di accettazione
+- eventuali altri file utili all'esercizio specifico
+
+I criteri di valutazione tengono conto del:
+- contenuto della branch master
+  - correttezza dello svolgimento dell'esercizio, cioè i test di accettazione dovrebber essere "verdi"
+  - qualità del codice scritto e.g. rispetto delle buone pratiche e leggibilità
+- l'uso delle branch e dei commit
+  - commit piccoli che permettano di ricostruire la storia
+  - messaggi di commit concisi, chiari ed esatti
 
 ## Vagrant
 HashiCorp Vagrant provides the same, easy workflow regardless of your role as a developer, operator, or designer. It leverages a declarative configuration file which describes all your software requirements, packages, operating system configuration, users, and more.
@@ -71,6 +81,7 @@ To use vagrant you need to open a terminal in the ```vagrant``` folder and type 
 ### Vagrant - Example of usage
 In this example I show the commands to start and connect to the VM using _Vagrant_. Once connected to the VM you are in a fully functional, albeit minimal, GNU/Linux distribution. At the end of the work, remember to logout from the VM and turn it off.
 
+Start VM and connect to it:
 ```bash
 # you are on your pc
 gianni@nolok ~/workspace/projects/ttf $ cd vagrant
@@ -78,6 +89,10 @@ gianni@nolok ~/workspace/projects/ttf/vagrant $ vagrant up
 gianni@nolok ~/workspace/projects/ttf/vagrant $ vagrant ssh
 # now you are connected to the VM and the next commands will be execute inside VM
 alpine38:~$ 
+```
+
+At the end, you need to logout and shutdown the VM:
+```bash
 # remenber to logout from the VM
 alpine38:~$ logout
 # you are back on your pc
