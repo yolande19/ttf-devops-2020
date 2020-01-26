@@ -10,15 +10,14 @@ fi
 
 should_execute_factor_with_default_value() {
     local readonly DESCRIPTION='should execute factor with default value'
-    local readonly EXPECTED=`(factor 42)`
+    local readonly EXPECTED="42: 2 3 7"
     local readonly ACTUAL=`(docker run $NAME)`
-    local readonly TRIMMED_EXPECTED=${EXPECTED##*( )}
     assertEquals "$ACTUAL" "$EXPECTED"
 }
 
 should_execute_factor_with_external_value() {
     local readonly DESCRIPTION='should execute factor with external value'
-    local readonly EXPECTED=`(factor 20200127)`
+    local readonly EXPECTED="20200127: 31 651617"
     local readonly ACTUAL=`(docker run $NAME 20200127)`
     assertEquals "$ACTUAL" "$EXPECTED"
 }

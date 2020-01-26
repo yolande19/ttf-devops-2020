@@ -23,14 +23,10 @@ should_reverse_the_contet_of_the_default_file() {
 }
 
 should_reverse_the_contet_of_the_file_with_name() {
-    local readonly DESCRIPTION='should reverse the content of the "os-release" file'
-    local readonly ACTUAL=`(docker run $NAME /etc/os-release)`
-    local readonly EXPECTED="\"xuniL eniplA\"=EMAN
-enipla=DI
-3.01.3=DI_NOISREV
-\"01.3v xuniL eniplA\"=EMAN_YTTERP
-\"/gro.xunilenipla//:sptth\"=LRU_EMOH
-\"/gro.xunilenipla.sgub//:sptth\"=LRU_TROPER_GUB"
+    local readonly DESCRIPTION='should reverse the content of the "modules" file'
+    local readonly EXPECTED="tekcap_fa
+6vpi"
+    local readonly ACTUAL=`(docker run $NAME /etc/modules)`
     assertEquals "$ACTUAL" "$EXPECTED"
 }
 

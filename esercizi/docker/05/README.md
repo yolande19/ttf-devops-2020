@@ -1,6 +1,6 @@
 # Esercizio 05  
 Quando viene eseguito questo container, esso esegue il comando ```factor 42```, che restituisce la scomposizione in fattori del numero 42.
-Se viene passato un comando esterno, esso sovrascrive il comando predefinito, e viene eseguito normalmente.
+Se viene passato un comando esterno, esso viene interpretato come se fosse il parametro del comando ```factor```.
 
 ## Requisiti
 Definire un'immagine Docker tramite ```Dockerfile``` che soddisfa i seguenti requisiti:

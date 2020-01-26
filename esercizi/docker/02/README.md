@@ -1,6 +1,6 @@
 # Esercizio 02
 Quando viene eseguito questo container, esso esegue il comando ```figlet Hello World```, che restituisce la scritta _Hello World_ in ASCII Art.
-Se viene passato un comando esterno, esso sovrascrive il comando predefinito, e viene eseguito normalmente.
+Se viene passato un comando esterno, esso sovrascrive il comando predefinito, e quest'ultimo viene eseguito normalmente.
 
 ## Requisiti
 Definire un'immagine Docker tramite ```Dockerfile``` che soddisfa i seguenti requisiti:

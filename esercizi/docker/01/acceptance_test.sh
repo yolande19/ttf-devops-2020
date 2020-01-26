@@ -10,7 +10,7 @@ fi
 
 should_execute_factor_with_default_value() {
     local readonly DESCRIPTION='should execute factor with default value'
-    local readonly EXPECTED=`(factor 42)`
+    local readonly EXPECTED="42: 2 3 7"
     local readonly ACTUAL=`(docker run $NAME)`
     assertEquals "$ACTUAL" "$EXPECTED"
 }
