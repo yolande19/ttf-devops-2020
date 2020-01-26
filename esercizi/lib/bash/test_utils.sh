@@ -44,6 +44,15 @@ assertRegExpMatch() {
     fi
 }
 
+assertFileExists() {
+    if [[ -f $1 ]]; then
+        success;
+    else
+        fail;
+        if [ $DEBUG ]; then print_file_exists_fail_details "$1"; fi
+    fi
+}
+
 success() {
     ((total_success++))
     print_success
@@ -76,4 +85,8 @@ print_regexp_fail_details() {
     echo "============ DOES NOT MATCH WITH"
     echo "$2"
     echo "============"
+}
+
+print_file_exists_fail_details() {
+    echo "============ DOES NOT EXISTS OR IT IS NOT A REGULAR FILE: $1"
 }
