@@ -23,7 +23,12 @@ After that, the students will use this repository, their own fork, as a single r
 ## vs-code plugins
 
 List of usefull plugins:
+- Git History
+- GitLens — Git supercharged
+- gitignore
 - Docker
+- Bash IDE (optional)
+- Open in GitHub, Bitbucket, Gitlab, VisualStudio.com ! (optional)
 - Vagrant (optional)
 
 ### Configure Docker plugin
