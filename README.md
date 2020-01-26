@@ -20,10 +20,19 @@ After that, the students will use this repository, their own fork, as a single r
 - make a new pull request to the "base repository"
 - start working and enjoy
 
-## vs-code usefull plugins
+## vs-code plugins
 
+List of usefull plugins:
 - Docker
 - Vagrant (optional)
+
+### Configure Docker plugin
+
+Follow this step to configure the _Docker plugin_:
+- open the vs-code settings ```Ctrl + ,```
+- use the left navigation menu to open ```Extensions -> Docker```
+- search the field ```Docker: Host```
+- fill the ```Docker: Host``` field with the following value ```tcp://192.168.50.95:2375```
 
 ## Working Agreements
 
@@ -59,24 +68,26 @@ HashiCorp Vagrant provides the same, easy workflow regardless of your role as a 
 More info at this [link](https://www.vagrantup.com/intro/index.html).
 
 ### Vagrant - Overview
-in the _vagrant_ folder there is a file called ```Vagrantfile```. Inside, the configuration of the virtual machine (VM) that can be used to perform the exercises is described. In addition, there is a _bash_ file called ```provisioner.sh``` that is automatically executed during the creation of the VM and which has the purpose of installing the necessary software packages and making some configurations inside the newly created VM.
+In the _vagrant_ folder there is a file called ```Vagrantfile```. Inside, the configuration of the virtual machine (VM) that can be used to perform the exercises is described. In addition, there is a _bash_ file called ```provisioner.sh``` that is automatically executed during the creation of the VM and which has the purpose of installing the necessary software packages and making some configurations inside the newly created VM.
 
 > :warning: WARNING: please change the values of ```user.name``` and ```user.email``` in ```provisioner.sh``` file and un-comment that lines!!!
 
+### Vagrant - Use Docker from outside
+È possibile connettersi "remotamente" al servizio _Docker_ presente all'interno della VM avviata con _Vagrant_. Per sfruttare questa possibilità è necessario istruire Docker per connettersi al server remoto in uno dei seguenti modi:
+- configurare la variabile d'ambiente ```DOCKER_HOST``` con il valore ```tcp://192.168.50.95:2375```
+- eseguire ogni comando ```docker``` con l'opzione ```-H tcp://192.168.50.95:2375```
 
 ### Vagrant - Usage
 To use vagrant you need to open a terminal in the ```vagrant``` folder and type one of the commands below, the one that's right fo you :-)
 
-| Name | Vagrant Command |
-| ---- | --------------- |
-| Up | vagrant up |
-| Provision | vagrant provision |
-| Suspend | vagrant suspend |
-| Halt | vagrant halt |
-| Reload | vagrant reload |
-| Destroy | vagrant destroy |
-| Status | vagrant status |
-| Connect | vagrant ssh |
+| Name | Vagrant Command | Description |
+| ---- | --------------- | ----------- |
+| Up | vagrant up | starts and provisions the vagrant environment |
+| Provision | vagrant provision | provisions the vagrant machine |
+| Halt | vagrant halt | stops the vagrant machine |
+| Destroy | vagrant destroy | stops and deletes all traces of the vagrant machine |
+| Status | vagrant status | outputs status of the vagrant machine |
+| Connect | vagrant ssh | connects to machine via SSH |
 
 ### Vagrant - Example of usage
 In this example I show the commands to start and connect to the VM using _Vagrant_. Once connected to the VM you are in a fully functional, albeit minimal, GNU/Linux distribution. At the end of the work, remember to logout from the VM and turn it off.
